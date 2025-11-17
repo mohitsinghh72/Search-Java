@@ -21,3 +21,28 @@ public class LinearSearch {
     }
 }
 
+// ----------------------------------------------------------------------------------------------------------------- //
+
+// finding in String
+
+public class LinearSearch{
+    public static void main(String[] args){
+        String name = "Ramcharan";
+        boolean ans = search(name,'z');
+        System.out.println(ans);
+
+    }
+    static boolean search(String str, char target){
+        if(str.length() == 0){                      // if length of string is 0. then it returns false.
+            return false;
+        }
+
+        for(int i = 0;i<str.length();i++){
+            if(str.charAt(i) == target){   //charAt(i) only consider the element that is at index i
+                return true;
+            }
+        }
+        return false;
+    }
+}
+
