@@ -1,6 +1,7 @@
 package JAVA_BASICS;
 
 //Selection sort
+// Selection sort is not a stable sort
 
 import java.util.Arrays;
 
